@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5504354D25F5555A002919E3 /* NodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504354C25F5555A002919E3 /* NodeMobile.xcframework */; };
+		5504354E25F5555A002919E3 /* NodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5504354C25F5555A002919E3 /* NodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5504357E25F6DD60002919E3 /* NodeRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5504357D25F6DD60002919E3 /* NodeRunner.mm */; };
+		5504359525F6E58E002919E3 /* backend in Resources */ = {isa = PBXBuildFile; fileRef = 5504359425F6E58E002919E3 /* backend */; };
 		55F102B525F5207000D186D4 /* ManyverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F102B425F5207000D186D4 /* ManyverseApp.swift */; };
 		55F102B725F5207000D186D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F102B625F5207000D186D4 /* ContentView.swift */; };
 		55F102B925F5207100D186D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F102B825F5207100D186D4 /* Assets.xcassets */; };
@@ -32,7 +36,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5504354F25F5555A002919E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5504354E25F5555A002919E3 /* NodeMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		550434EC25F521FD002919E3 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = ../manyverse/libnode/NodeMobile.framework; sourceTree = "<group>"; };
+		550434F025F52259002919E3 /* NodeRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NodeRunner.h; path = ../../manyverse/Manyverse/NodeRunner.h; sourceTree = "<group>"; };
+		5504350425F543A6002919E3 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = "../../../Downloads/nodejs-mobile-v0.3.2-ios/Release-iphoneos/NodeMobile.framework"; sourceTree = "<group>"; };
+		5504350F25F548D3002919E3 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = "../../../Downloads/nodejs-mobile-v0.3.2-ios/Release-universal/NodeMobile.framework"; sourceTree = "<group>"; };
+		5504353825F54D82002919E3 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = "../../external/nodejs-mobile/out_ios/Release-universal/NodeMobile.framework"; sourceTree = "<group>"; };
+		5504354125F54DA0002919E3 /* Release-iphoneos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Release-iphoneos"; path = "../../external/nodejs-mobile/out_ios/Release-iphoneos"; sourceTree = "<group>"; };
+		5504354225F54DAC002919E3 /* Release-iphonesimulator */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Release-iphonesimulator"; path = "../../external/nodejs-mobile/out_ios/Release-iphonesimulator"; sourceTree = "<group>"; };
+		5504354325F54DB8002919E3 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = "../../external/nodejs-mobile/out_ios/Release-iphoneos/NodeMobile.framework"; sourceTree = "<group>"; };
+		5504354C25F5555A002919E3 /* NodeMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NodeMobile.xcframework; path = "../../external/nodejs-mobile/NodeMobile.xcframework"; sourceTree = "<group>"; };
+		5504357C25F6DD5F002919E3 /* Manyverse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Manyverse-Bridging-Header.h"; sourceTree = "<group>"; };
+		5504357D25F6DD60002919E3 /* NodeRunner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NodeRunner.mm; path = ../../manyverse/Manyverse/NodeRunner.mm; sourceTree = "<group>"; };
+		5504359425F6E58E002919E3 /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; name = backend; path = ../manyverse/backend; sourceTree = "<group>"; };
 		55F102B125F5207000D186D4 /* Manyverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manyverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F102B425F5207000D186D4 /* ManyverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyverseApp.swift; sourceTree = "<group>"; };
 		55F102B625F5207000D186D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5504354D25F5555A002919E3 /* NodeMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +103,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550434EB25F521FD002919E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5504354C25F5555A002919E3 /* NodeMobile.xcframework */,
+				5504354325F54DB8002919E3 /* NodeMobile.framework */,
+				5504354225F54DAC002919E3 /* Release-iphonesimulator */,
+				5504354125F54DA0002919E3 /* Release-iphoneos */,
+				5504353825F54D82002919E3 /* NodeMobile.framework */,
+				5504350F25F548D3002919E3 /* NodeMobile.framework */,
+				5504350425F543A6002919E3 /* NodeMobile.framework */,
+				550434EC25F521FD002919E3 /* NodeMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55F102A825F5207000D186D4 = {
 			isa = PBXGroup;
 			children = (
+				5504359425F6E58E002919E3 /* backend */,
 				55F102B325F5207000D186D4 /* Manyverse */,
 				55F102C525F5207100D186D4 /* ManyverseTests */,
 				55F102D025F5207100D186D4 /* ManyverseUITests */,
 				55F102B225F5207000D186D4 /* Products */,
+				550434EB25F521FD002919E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +148,9 @@
 				55F102B825F5207100D186D4 /* Assets.xcassets */,
 				55F102BD25F5207100D186D4 /* Info.plist */,
 				55F102BA25F5207100D186D4 /* Preview Content */,
+				550434F025F52259002919E3 /* NodeRunner.h */,
+				5504357D25F6DD60002919E3 /* NodeRunner.mm */,
+				5504357C25F6DD5F002919E3 /* Manyverse-Bridging-Header.h */,
 			);
 			path = Manyverse;
 			sourceTree = "<group>";
@@ -140,6 +191,7 @@
 				55F102AD25F5207000D186D4 /* Sources */,
 				55F102AE25F5207000D186D4 /* Frameworks */,
 				55F102AF25F5207000D186D4 /* Resources */,
+				5504354F25F5555A002919E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +249,7 @@
 				TargetAttributes = {
 					55F102B025F5207000D186D4 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					55F102C125F5207100D186D4 = {
 						CreatedOnToolsVersion = 12.4;
@@ -233,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5504359525F6E58E002919E3 /* backend in Resources */,
 				55F102BC25F5207100D186D4 /* Preview Assets.xcassets in Resources */,
 				55F102B925F5207100D186D4 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +315,7 @@
 			files = (
 				55F102B725F5207000D186D4 /* ContentView.swift in Sources */,
 				55F102B525F5207000D186D4 /* ManyverseApp.swift in Sources */,
+				5504357E25F6DD60002919E3 /* NodeRunner.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +386,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -351,6 +407,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -392,6 +449,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -405,6 +463,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -417,18 +476,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Manyverse/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FDUNMTLJS;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Manyverse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.manyver.Manyverse;
+				PRODUCT_BUNDLE_IDENTIFIER = se.manyver.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Manyverse/Manyverse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,18 +503,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Manyverse/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FDUNMTLJS;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Manyverse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.manyver.Manyverse;
+				PRODUCT_BUNDLE_IDENTIFIER = se.manyver.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Manyverse/Manyverse-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
