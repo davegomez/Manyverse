@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5504354D25F5555A002919E3 /* NodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504354C25F5555A002919E3 /* NodeMobile.xcframework */; };
-		5504354E25F5555A002919E3 /* NodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5504354C25F5555A002919E3 /* NodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5504357E25F6DD60002919E3 /* NodeRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5504357D25F6DD60002919E3 /* NodeRunner.mm */; };
 		5504359525F6E58E002919E3 /* backend in Resources */ = {isa = PBXBuildFile; fileRef = 5504359425F6E58E002919E3 /* backend */; };
+		55DD1B3025F9870B0001FA40 /* NodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD1B2F25F9870B0001FA40 /* NodeMobile.xcframework */; };
+		55DD1B3125F9870B0001FA40 /* NodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55DD1B2F25F9870B0001FA40 /* NodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55F102B525F5207000D186D4 /* ManyverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F102B425F5207000D186D4 /* ManyverseApp.swift */; };
 		55F102B725F5207000D186D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F102B625F5207000D186D4 /* ContentView.swift */; };
 		55F102B925F5207100D186D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F102B825F5207100D186D4 /* Assets.xcassets */; };
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5504354F25F5555A002919E3 /* Embed Frameworks */ = {
+		55DD1B3225F9870B0001FA40 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5504354E25F5555A002919E3 /* NodeMobile.xcframework in Embed Frameworks */,
+				55DD1B3125F9870B0001FA40 /* NodeMobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +63,7 @@
 		5504357C25F6DD5F002919E3 /* Manyverse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Manyverse-Bridging-Header.h"; sourceTree = "<group>"; };
 		5504357D25F6DD60002919E3 /* NodeRunner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NodeRunner.mm; path = ../../manyverse/Manyverse/NodeRunner.mm; sourceTree = "<group>"; };
 		5504359425F6E58E002919E3 /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; name = backend; path = ../manyverse/backend; sourceTree = "<group>"; };
+		55DD1B2F25F9870B0001FA40 /* NodeMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NodeMobile.xcframework; path = libnode/NodeMobile.xcframework; sourceTree = "<group>"; };
 		55F102B125F5207000D186D4 /* Manyverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manyverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F102B425F5207000D186D4 /* ManyverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyverseApp.swift; sourceTree = "<group>"; };
 		55F102B625F5207000D186D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5504354D25F5555A002919E3 /* NodeMobile.xcframework in Frameworks */,
+				55DD1B3025F9870B0001FA40 /* NodeMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				5504354C25F5555A002919E3 /* NodeMobile.xcframework */,
+				55DD1B2F25F9870B0001FA40 /* NodeMobile.xcframework */,
 				5504354325F54DB8002919E3 /* NodeMobile.framework */,
 				5504354225F54DAC002919E3 /* Release-iphonesimulator */,
 				5504354125F54DA0002919E3 /* Release-iphoneos */,
@@ -191,7 +193,7 @@
 				55F102AD25F5207000D186D4 /* Sources */,
 				55F102AE25F5207000D186D4 /* Frameworks */,
 				55F102AF25F5207000D186D4 /* Resources */,
-				5504354F25F5555A002919E3 /* Embed Frameworks */,
+				55DD1B3225F9870B0001FA40 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
